@@ -1,83 +1,189 @@
 <html>
 
-   <head>
+<head>
 
-        <title>小飞猪</title>
+	<title>小飞猪</title>
 
-        <style>
+	<style>
+		span {
+			color: blue;
+		}
 
-		span{color:blue;}
-		table tr td.th{border:1px solid #000;}
+		q {
+			color: red
+		}
+
+		#taidu {
+			font-size: 25px;
+		}
+
+		.food>li {
+			border: 1px solid pink
+		}
+
+		.food1 li {
+			border: 1px solid pink
+		}
+
+		address,
+		strong {
+			color: red
+		}
+
+		a:link {
+			color: green
+		}
+
+		a:visited {
+			color: aqua
+		}
+
+		a:hover {
+			font-size: 30px;
+			color: red
+		}
+
+		a:active {
+			color: rebeccapurple
+		}
 	</style>
-        <link rel="stylesheet" href="html+css.css">
+	<link href="html+css.css" rel="stylesheet" type="text/css" />
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <script></script>
-
-   </head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 
-   <body>
-	<h1>标题h1</h1>
-	<p>段落p<em>斜体em</em><strong>加粗strong</strong></p>
-	<p><span>我有单独样式span</span></p>
-	<p>排版是div，引用和排序有排版哦</p>
-	<div id="yinyong"><p>引用<q>短文本q“”样式</q><blockquote>长文本blockquote缩进样式</blockquote></p></div>
-	<p>添加代码：单行可以用code，多行可以用pre</p>
-	<p>空&nbsp;&nbsp;&nbsp;&nbsp;格是<code>小写的&NBSP;</code></p>
-	<p>我是空标签：br /回车；<br /><hr />hr /添加水平横线；<br /><hr />img /添加图片</p>
-	<img scr="D:\Pictures\cnm.jpg" title="草泥马" />
-	<p>添加地址信息address,默认样式为斜体<address>我是李强</address></p>
-	<div id="paixu"><p>排序:无序是ul，有序是ol<ul><li>软件工程</li><li>人工智能</li><li>Android移动开发</li></ul><ol><li>软件工程</li><li>人工智能</li><li>Android移动开发</li></ol></p></div>
-	<table summary=这个表格描述表格>
-	<caption>caption是表格标题文本</caption>
-	<tr>
-	<th>tr是行</th>
-	<th>td是列</th>
-	<th>th是表头</th>
-	</tr>
-	<tr>
-	<td>thead</td>
-	<td>tbody</td>
-	<td>tfooter</td>
-	</tr>
-	<tr>
-	<td>上面的表格结构</td>
-	<td>加上可以给表格分段</td>
-	<td>表格的内容下载完优先显示</td>
-	</tr>
-	</table>
-	<p>超链接是a，加title在鼠标滑过链接文字时会显示这个属性的文本内容，<strong>方便搜素引擎，语义化更友好</strong><a href="https://www.baidu.com/" target="_blank"  title="点击进入百度">点我点我</a></p>
-	<p>超链接是a，加mailto可以在网页中链接Email地址<a href="mailto: 675343019@qq.com?subject:小飞猪&body:爸爸，你是最棒的" >发送邮件哦</a></p>
-	<form>
-		<label for="usename">用户名:</label>
-		<input type="text" name="usename"/><br />
-		<label for="pass">密码:</label>
-		<input type="password" name="pass"/><br />
-		<input type="submit" value="提交" />
-		<input type="reset" value="重置" /><br />
-		<label>联系我们！</label>
-		<textarea rows="10" cols="50">在这里输入内容...</textarea><br />
-		<label>爱好：</label><br />
-		<select multiple="multiple">
-			<option value="读书">读书</option>
-			<option value="运动">运动</option>
-			<option value="音乐">音乐</option>
-			<option value="旅游">旅游</option>
-			<option value="购物" selected="select">购物</option>
-			
-		</select><br />
-		你对什么运动感兴趣：<br />
-	   <label for="manpao">慢跑</label>
-	  <input type="checkbox" name="gender" id="manpao" />
-	  <br />
-	  <label for="dengshan">登山</label>
-	  <input type="checkbox" name="gender" id="dengshan" />
-	  <br />
-	  <label for="lanqiu">篮球</label>
-	  <input type="checkbox" name="gender" id="lanqiu"><br />
-	  <input type="reset" value="重置" />	
-	</form>
-   </body>
+</head>
+
+
+<body>
+
+	<h1>文本样式</h1>
+	<div name="wenben">
+		<p>段落p,<em>斜体em,</em><strong>加粗strong,</strong><span>单独样式span,<br /></span>引用:<q>短文本q“”样式,<blockquote>
+					长文本blockquote缩进样式</blockquote></q> 我是空标签：br /回车；<br />
+			<hr />hr /添加水平横线；<br />
+			<hr />img /添加图片<img scr="D:\Pictures\cnm.jpg" title="cnm" /><br />
+			添加代码：单行可以用code，多行可以用pre<br />空&nbsp;&nbsp;&nbsp;格是小写的&NBSP;<br />
+			<address>添加地址信息address,默认样式为斜体我是李强</address><br />
+		</p>
+	</div>
+	<h2>三人行，必有我师焉（CSS）</h2>
+	<div class="srx">
+		<p>这句几乎是家喻户晓的话，出自<span class="xx ys">《论语·述而》</span>。原文是：<q
+				style="font-size: 20px">三人行，必有我师焉。择其善者而从之，其不善者而改之。</q>意思是：三个人同行，其中必定有我的老师。我选择他善的方面向他学习，看到他不善的方面就对照自己改正自己的缺点。
+		</p>
+		<p>这句话，表现出孔子自觉修养，虚心好学的精神。它包含了两个方面：一方面，择其善者而从之，见人之善就学，是虚心好学的精神；另一方面，其不善者而改之，见人之不善就引以为戒，反省自己，是自觉修养的精神。这样，无论同行相处的人善于不善，都可以为师。
+			<blockquote>
+				<span
+					class="ys">《论语》</span>中有一段记载，一次卫国公孙朝问子贡，孔子的学问是从哪里学的？子贡回答说，古代圣人讲的道，就留在人们中间，贤人认识了它的大处，不贤的人认识它的小处；他们身上都有古代圣人之道。“夫子焉不学，而亦何常师之有？“（<span
+					class="xx ys">《论语·子张》</span>）他随时随地向一切人学习，谁都可以是他的老师，所以说“何常师之有“，没有固定的老师。《论语》中不少记载，如孔子入太庙，“每事问“（<span
+					class="xx ys">《论语·八佾》</span>）；宰予白天睡觉，孔子说：“始我于人也，听其言而信其行；今我于人也，听其言而观其行。于予与改是。“（<span
+					class="xx ys">《论语·公冶长》</span>）子贡对孔子说，子贡自己只能“闻一而知二”，颜回却可以“闻一而知十”。孔子说：“弗如也。吾与汝弗如也。“（<span
+					class="ys xx">《论语·公冶长》</span>）
+			</blockquote>都体现了这种精神。这样的精神和态度，是很值得我们学习的。
+		</p>
+		<p>
+			<q
+				id="taidu">三人行，必有我师，择其善者而从之，其不善者而改之</q>的态度和精神，也体现了与人相处的一个重要原则。随时注意学习他人的长处，随时以他人缺点引以为戒，自然就会多看他人的长处，与人为善，待人宽而责己严。这不仅是修养、提高自己的最好途径，也是促进人际关系和谐的重要条件。
+		</p>
+		<p>虽然<q>三人行，必有我师</q>可以说是家喻户晓，可是人们并不是经常能够做到。人们常犯的一个通病，就是往往看自己的优点和他人的缺点多，看自己的缺点和他人的优点少。所以，重温<q>三人行，必有我师，择其善者而从之，其不善者而改之</q>认真领会它的深刻内涵，并且努力去做，还是很有意义的。
+		</p>
+	</div>
+
+	<h2>表格样式</h2>
+	<div name="biaoge">
+		<table summary=这个表格摘要>
+			<caption>caption是表格标题文本</caption>
+			<tr>
+				<th>tr是行</th>
+				<th>td是列</th>
+				<th>th是表头</th>
+			</tr>
+			<tr>
+				<td>thead</td>
+				<td>tbody</td>
+				<td>tfooter</td>
+			</tr>
+			<tr>
+				<td>上面的表格结构</td>
+				<td>加上可以给表格分段</td>
+				<td>表格的内容下载完优先显示</td>
+			</tr>
+		</table>
+	</div><br />
+	<h3>排序样式</h3>
+	<div name="paixu">
+		排序:无序是ul，有序是ol
+		<ol class="food">
+			<li>水果
+				<ul>
+					<li>香蕉</li>
+					<li>苹果</li>
+					<li>梨</li>
+				</ul>
+			</li>
+			<li>蔬菜
+				<ul>
+					<li>白菜</li>
+					<li>油菜</li>
+					<li>卷心菜</li>
+				</ul>
+			</li>
+		</ol><br /><br />
+		<ul class="food1">
+			<li>水果
+				<ol>
+					<li>香蕉</li>
+					<li>苹果</li>
+					<li>梨</li>
+				</ol>
+			</li>
+			<li>蔬菜
+				<ul>
+					<li>白菜</li>
+					<li>油菜</li>
+					<li>卷心菜</li>
+				</ul>
+			</li>
+		</ul>
+	</div><br />
+	<h4>超链接样式</h4>
+	<div name="clj">
+		<p>超链接是a，加title在鼠标滑过链接文字时会显示这个属性的文本内容，<strong>方便搜素引擎，语义化更友好。</strong>加target="_blank"会在新窗口打开<a
+				href="https://www.baidu.com/" target="_blank" title="点击进入百度">爸爸，最棒。妈妈，最漂亮</a><br />
+			加mailto可以在网页中链接Email地址<a href="mailto: 675343019@qq.com?subject:小飞猪&body:爸爸，最棒。妈妈，最漂亮">发送邮件哦</a></p><br />
+	</div>
+	<h5>用户交互form表单</h5>
+	<div name="biaodan">
+		<form>
+			<label for="usename">用户名:</label>
+			<input type="text" name="usename" /><br />
+			<label for="pass">密码:</label>
+			<input type="password" name="pass" /><br />
+			<input type="submit" value="提交" />
+			<input type="reset" value="重置" /><br /><br /><br />
+			<label>联系我们！</label><br />
+			<textarea rows="10" cols="50">在这里输入内容...</textarea><br /><br /><br />
+			<label>爱好：</label><br />
+			<select multiple="multiple">
+				<option value="读书">读书</option>
+				<option value="运动">运动</option>
+				<option value="音乐">音乐</option>
+				<option value="旅游">旅游</option>
+				<option value="购物" selected="select">购物</option>
+
+			</select><br /><br /><br />
+			你对什么运动感兴趣：<br />
+			<label for="manpao">慢跑</label>
+			<input type="checkbox" name="gender" id="manpao" />
+			<br />
+			<label for="dengshan">登山</label>
+			<input type="checkbox" name="gender" id="dengshan" />
+			<br />
+			<label for="lanqiu">篮球</label>
+			<input type="checkbox" name="gender" id="lanqiu"><br />
+		</form>
+	</div>
+</body>
 
 </html>
