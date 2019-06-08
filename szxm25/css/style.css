@@ -1,9 +1,38 @@
+/*通用样式*/
 * {
   margin: 0;
   padding: 0;
+} /*去除外边距*/
+/*全局字体*/
+body {
+  font: 14px/24px "微软雅黑",
+    "宋体" '"Helvetica Neue",Helvetica,Arial,sans-serif';
 }
+.wp {
+  width: 960px;
+  margin: 0 auto;
+} /*居中*/
+.z {
+  float: left;
+} /*左浮动*/
+.y {
+  float: right;
+} /*右浮动*/
+.cl {
+  clear: both;
+} /*清除浮动*/
+
 .top {
   width: 100%;
   height: 24px;
+  line-height: 24px;
+  color: #d8d8d8;
   background: #303030;
+}
+.top a {
+  color: #d8d8d8;
+  text-decoration: none;
+}
+.top a:hover {
+  color: #f60;
 }
