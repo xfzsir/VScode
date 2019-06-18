@@ -1,38 +1,59 @@
-/*通用样式*/
+/*通用样式，去除外边距*/
 * {
   margin: 0;
   padding: 0;
-} /*去除外边距*/
+}
 /*全局字体*/
 body {
   font: 14px/24px "微软雅黑",
     "宋体" '"Helvetica Neue",Helvetica,Arial,sans-serif';
 }
+/*居中*/
 .wp {
   width: 960px;
   margin: 0 auto;
-} /*居中*/
+}
+/*左浮动*/
 .z {
   float: left;
-} /*左浮动*/
+}
+/*右浮动*/
 .y {
   float: right;
-} /*右浮动*/
+}
+/*清除浮动*/
 .cl {
   clear: both;
-} /*清除浮动*/
+}
+/* 清除外边距 */
+.mr_0{
+  margin: 0;
+}
+
+
 
 .top {
   width: 100%;
   height: 24px;
+  /*居中*/
   line-height: 24px;
   color: #d8d8d8;
   background: #303030;
 }
+/* 链接间距 */
+.top span{
+  margin-right: 15px;
+}
+/* 清除间距 */
+.top span.mr_0{
+  margin: 0;
+}
+/* top超链接的颜色 */
 .top a {
   color: #d8d8d8;
-  text-decoration: none;
+  text-decoration: none;/*去下划线*/
 }
+/* 超链接滑动效果 */
 .top a:hover {
   color: #f60;
 }
