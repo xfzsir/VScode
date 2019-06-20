@@ -26,18 +26,13 @@ body {
   clear: both;
 }
 /* 清除外边距 */
-.mr_0{
+.mr_0 {
   margin: 0;
 }
 /* 图片边框 */
-.img{
-  border:none;
+.img {
+  border: none;
 }
-
-
-
-
-
 
 /* 第一部分 */
 .top {
@@ -49,17 +44,17 @@ body {
   background: #303030;
 }
 /* 链接间距 */
-.top span{
+.top span {
   margin-right: 15px;
 }
 /* 清除间距 */
-.top span.mr_0{
+.top span.mr_0 {
   margin: 0;
 }
 /* top超链接的颜色 */
 .top a {
   color: #d8d8d8;
-  text-decoration: none;/*去下划线*/
+  text-decoration: none; /*去下划线*/
 }
 /* 超链接滑动效果 */
 .top a:hover {
@@ -67,53 +62,86 @@ body {
 }
 
 /* logos */
-.logos{
+.logos {
   height: 63px;
   margin: 10px 0;
 }
 /* 搜索 */
-.sousuo{
+.sousuo {
   width: 400px;
   height: 63px;
   margin-top: 6px;
 }
-.sousuo td{
+.sousuo td {
   height: 44px;
 }
-.s_z{
+.s_z {
   width: 11px;
   background: url(../images/s_z.gif) no-repeat;
 }
-.s_c{
+.s_c {
   width: 240px;
-  background: url(../images/s_c.gif)repeat-x;
+  background: url(../images/s_c.gif) repeat-x;
 }
-.s_y{
+.s_y {
   width: 90px;
   background: url(../images/s_y.gif) no-repeat;
 }
-.s_c input{
+.s_c input {
   width: 240px;
   height: 44px;
   line-height: 44px;
   border: none;
-  background:url(../images/s_c.gif)repeat-x;
+  background: url(../images/s_c.gif) repeat-x;
 }
-.s_y button{
+.s_y button {
   width: 90px;
   height: 44px;
   background: none;
-  border:0;
-  cursor:pointer;
+  border: 0;
+  cursor: pointer;
 }
-.dianhua{
+.dianhua {
   height: 63px;
   line-height: 63px;
 }
-.dianhua span{
+.dianhua span {
   font-size: 25px;
   color: darkred;
 }
+
+/* 导航 */
+.nav {
+  height: 32px;
+  width: 100%;
+  background: url(../images/nav_bg.gif) repeat-x;
+}
+.nav li {
+  list-style: none;
+  float: left;
+  line-height:32px;
+  padding:0 28px;
+}
+.nav li.a , .nav li:hover{
+  background: url(../images/nav_hover.gif)repeat-x;
+}
+.nav a{
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* center部分 */
+.
+
+
+
+
+
+
+
+
+
 
 
 
