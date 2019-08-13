@@ -1,0 +1,108 @@
+p {
+    color: red;
+    font-size: 14px;
+}
+
+h1 {
+    color: blue;
+    font-size: 20px;
+}
+
+span {
+    font-size: 100px;
+}
+
+.mingren {
+    /*这么写不好*/
+    color: orange;
+}
+
+.c-bule {
+    color: blue;
+}
+
+.c-red {
+    color: red;
+}
+
+.c-yellow {
+    color: yellow;
+}
+
+.c-green {
+    color: green;
+}
+
+.font20 {
+    /* 类选择器是可以重复多次使用的，类似于 人名 */
+    font-size: 20px;
+}
+
+#big {
+    color: pink;
+}
+
+#pink {
+    /*id 类似身份证号，是唯一的，只允许用一次 */
+    color: pink;
+}
+
+/* * {
+    color: pink;
+} */
+
+
+ /* 未访问的链接 */
+/* a:link {
+    font-size: 20px;
+    color: #ccc;
+    font-weight: 700;
+} */
+
+a:visited {
+    /* 已访问的链接 */
+    font-size: 20px;
+    color: orange;
+    font-weight: 700;
+}
+
+a:hover {
+    /* 鼠标移动到链接上 */
+    font-size: 20px;
+    color: red;
+    font-weight: 700;
+}
+
+a:active {
+    /* 选定的链接 */
+    font-size: 20px;
+    color: green;
+    font-weight: 700;
+}
+li:first-child {
+    /* 选择第一个孩子 */
+    color: pink;
+}
+li:last-child {
+    /* 选择最后一个孩子 */
+    color: skyblue;
+}
+li:nth-child(4) {
+    /* 选择第四个孩子，n代表第几个 */
+    color: red;
+}
+li:nth-child(even) {
+    /* even：选择所有的偶数孩子，odd：选择所有的奇数孩子，n：选择从0开始的孩子，2n：选择所有偶数，通过公式表达 */
+    color: green;
+}
+li:nth-last-child() {
+    /* 从最后一个孩子开始数的，倒着数的 */
+    color: #ccc;
+}
+body {
+    background-color: #000;
+    background-image: url(images/ms.jpg);
+    background-repeat: no-repeat;
+    background-position: center -25px;
+    background-attachment: fixed;
+}

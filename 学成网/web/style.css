@@ -1,0 +1,207 @@
+/* 样式 */
+/* 样式初始化 */
+* {
+    padding: 0;
+    margin: 0;      /*清除内外边距 */
+}
+ul {
+     list-style: none;       /*去掉列表样式小点 */
+}
+.clearfix:before,
+.clearfix:after {     /* 清除浮动 */
+    display: table;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+ .clearfix {     /*为了兼容ie6.7的清除浮动*/
+    *zoom: 1;
+}
+a {
+    color: #050505;
+    text-decoration: none;
+}
+input {
+    border :0;/* 所有的表单边框为0 */
+    box-sizing: border-box;/* CSS3盒子模型 border 和 padding 都包含到 width 里面去 */
+}
+ .container {   /* 因为版心宽度都是1200 都要居中对齐 所有声明公共类 */
+    width: 1200px;
+    margin: 0 auto;
+}
+/* css初始化结束 */
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+
+header {
+    height: 100px;
+    overflow: hidden;
+}
+nav {
+    width: 1366px;
+    height: 42px;
+    margin: 26px auto;
+}
+/* logo部分 */
+.logo {
+    float: left;
+    margin-right: 50px;
+}
+/* 导航栏部分 */
+.navbar {
+    float: left;
+    height: 42px;
+    line-height: 42px;     /*  这个行高给父亲，行高会继承 */
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    padding: 0 10px;
+    display: block;
+    height: 42px;
+}
+.navbar li a:hover {    /* 鼠标放上有下划线，要注意伪类放的位置 */
+        border-bottom: 2px solid #00a4ff;
+}
+/* 搜索框部分 */
+.search {
+    width: 410px;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    margin-left: 20px;
+    float: right;
+}
+.search input[type=text] {
+    width: 360px;
+    height: 38px;
+    padding-left: 20px; 
+    /* box-sizing: border-box;CSS3盒子模型 border 和 padding 都包含到 width 里面去 */
+    float: left;
+}
+.search input[type=submit] {
+    width: 50px;
+    height: 38px;
+    float: left;
+    background: #00a4ff url(images/search_06.png) center  no-repeat;
+}
+/* 个人信息部分 */
+.personal {
+    float: right;
+    height: 42px;
+    line-height: 42px;
+    margin: 0 20px 0 36px;
+}
+.personal img {
+    margin: 0 8px;
+}
+
+/* banner部分 */
+.banner {
+    height: 420px;
+    background: #1c036c;
+}
+.banner-in {
+    height: 420px;
+    background: url(images/banner2.png) 0 0 no-repeat;
+}
+/* 左侧导航栏 */
+.slidebar {
+    width: 190px;
+    height: 420px; 
+    background-color: rgba(0, 0, 0, 0.3);
+    float: left;
+}
+.slidebar li a {
+    font-size: 14px;
+    color: #fff; 
+    display:block;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+}
+.slidebar li a:hover {
+    color: #00a4ff;
+}
+.slidebar a span {
+    float:right;
+}
+/* 右侧课程表 */
+.timetable {
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+    float: right;
+}
+.timetable dt {
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #9bceea;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+.timetable dd {
+    width: 192px;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #4e4e4e;
+    padding-top: 12px;
+    box-sizing: border-box;
+}
+.timetable dd p {
+    font-size: 12px;
+    color: #5a5a5a;
+}
+.timetable dd:last-child {
+    border:0;
+}
+.timetable dd a {
+    height: 38px;
+    border:1px solid #00a4ff;
+    display: block;
+    font-size: 18px;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 38px;
+    font-weight: 700;
+}
+.timetable dd a:hover {
+    color: #fff;
+    background-color: #00a4ff;
+}
+/* 精品推荐 */
+.recommend {
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    margin-top: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.recommend a {
+    padding: 0 30px;
+    border-right: 1px solid #ccc;
+}
+.recommend a:hover {
+    color: #00a4ff;
+}
+.recommend a:first-child {
+    color: #00a4ff;
+}
+.recommend a:last-child {
+    color: #00a4ff;
+    border: none;
+    float: right;
+    font-size: 14px;
+}
