@@ -99,9 +99,10 @@ nav {
 }
 .personal img {
     margin: 0 8px;
+    vertical-align: middle;
 }
 
-/* banner部分 */
+/* banner部分 start*/
 .banner {
     height: 420px;
     background: #1c036c;
@@ -109,6 +110,7 @@ nav {
 .banner-in {
     height: 420px;
     background: url(images/banner2.png) 0 0 no-repeat;
+    position: relative;
 }
 /* 左侧导航栏 */
 .slidebar {
@@ -121,8 +123,7 @@ nav {
     font-size: 14px;
     color: #fff; 
     display:block;
-    height: 46px;
-    line-height: 46px;
+    line-height: 45px;
     padding: 0 20px;
 }
 .slidebar li a:hover {
@@ -130,6 +131,7 @@ nav {
 }
 .slidebar a span {
     float:right;
+    font-family: arial;
 }
 /* 右侧课程表 */
 .timetable {
@@ -151,7 +153,7 @@ nav {
     margin-bottom: 8px;
 }
 .timetable dd {
-    width: 192px;
+    width: 193px;
     height: 60px;
     margin: 0 auto;
     border-bottom: 1px solid #ccc;
@@ -181,6 +183,30 @@ nav {
     color: #fff;
     background-color: #00a4ff;
 }
+/* 小圆点部分 */
+.circle {
+    width: 180px;
+    height: 22px;
+    bottom: 10px;
+    position: absolute; 
+    left: 50%;
+    margin-left: -90px;
+}
+.circle li {
+    height: 12px;
+    width: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    float: left;
+    margin: 5px 8px;
+}
+.circle .current {
+    width: 19px;
+    background: #fff;
+    border-radius: 10px;
+}
+/* banner  edn */
+
 /* 精品推荐 */
 .recommend {
     height: 60px;
@@ -204,4 +230,109 @@ nav {
     border: none;
     float: right;
     font-size: 14px;
+}
+/*  精品推荐大模块  */
+.recom-products {
+    margin-top: 36px;
+}
+/* 精品推荐头部 */
+.recom-hd {
+    height: 42px;
+}
+.recom-hd h4 {
+    float: left;
+    color: #494949;
+}
+.recom-hd a {
+    float: right;
+    color: #a5a5a5;
+    margin-right: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.recom-hd a:hover {
+    color: #00a4ff;
+}
+/* 精品推荐主体部分 */
+.recom-bd ul li {
+    width: 228px;
+    height: 270px;
+    background: #fff;
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0 ,0, 0.3)
+}
+.recom-bd li:nth-child(5n) {
+    margin: 0;
+}
+.recom-bd li h5,
+.recom-bd li p {
+    padding-left: 24px;
+    padding-right: 20px;
+}
+.recom-bd li h5 {
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.recom-bd li p {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #999;
+}
+.recom-bd p span {
+color: #ff7c2d;
+}
+/* 底部部分 */
+footer {
+    height: 275px;
+    background-color: #fff;
+    margin-top: 100px;
+}
+.footer-in {
+    padding: 32px;
+}
+.footer-l {
+    float: left;
+}
+.footer-l p {
+    margin-top:20px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #666;
+}
+.footer-l a {
+    display: block;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 36px;
+    margin-top: 16px;
+}
+.footer-r {
+    float: right;
+    color: #333;
+    margin-left: 212px;
+}
+.footer-r dl {
+    width: 225px;
+    float: left;
+}
+.footer-r dt {
+    font-size: 16px;
+    height: 30px;
+}
+.footer-r dd {
+    font-size: 12px;
+    height: 20px;
+}
+.footer-r dd a:hover {
+    color: #00a4ff;
+    text-decoration: underline;
 }
